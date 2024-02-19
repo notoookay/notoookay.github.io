@@ -17,5 +17,6 @@ fetch(url)
   .then(response => response.json())
   .then(data => {
     const lastCommitDate = new Date(data.pushed_at);
-    document.getElementById("last-modified").textContent = lastCommitDate.toLocaleDateString();
+    const options = { year: 'numeric', month: 'long', day: 'numeric'};
+    document.getElementById("last-modified").textContent = lastCommitDate.toLocaleDateString("en-US", options);
   });
