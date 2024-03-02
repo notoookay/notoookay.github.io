@@ -2,7 +2,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-TITLE_NUM = 3
+TITLE_NUM = 5
 
 const titleElement = new TypeIt("#can-not-stop", {
   speed: 100,
@@ -29,6 +29,13 @@ if (randomNumber === 0) {
 } else if (randomNumber === 2) {
   titleElement.type("Something's happening!🤨")
     .pause(500)
+    .go();
+} else if (randomNumber === 3) {
+  titleElement.type("Thank you, Internet 😚")
+    .pause(500)
+    .go();
+} else {
+  titleElement.type("I hate math... 😩")
     .go();
 }
 
