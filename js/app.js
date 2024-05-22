@@ -19,12 +19,12 @@ if (randomNumber === 0) {
     .type("😆")
     .go();
 } else if (randomNumber === 1) {
-  titleElement.type("More power!")
+  titleElement.type("GPU Poor!")
     .pause(500)
-    .move(-6)
-    .type("compute ", {delay: 400})
-    .move(6)
-    .type("👀")
+    .move(-2)
+    .type("ooooooo ", {delay: 400})
+    .move(2)
+    .type("🥹")
     .go();
 } else if (randomNumber === 2) {
   titleElement.type("Something's happening!🤨")
