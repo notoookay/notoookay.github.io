@@ -22,43 +22,50 @@
 </head>
 
 <body>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+    <span class="theme-label">Dark/Light Mode</span>
+  </div>
 
   <!-- Add your site or application content here -->
-  <div class="grid-container">
-    <h1 id="can-not-stop"></h1>
+  <main class="grid-container">
+    <h1 id="can-not-stop" class="grid-100"></h1>
 
-    <div class="grid-40">
+    <section class="grid-40">
       <div class="portrait">
-        <img src="assets/img/wenyang.JPG" alt="portrait"> <br/>
-        <b>Wenyang Tang</b>
+        <img src="assets/img/wenyang.JPG" alt="Portrait of Wenyang Tang">
+        <h2>Wenyang Tang</h2>
       </div>
-      <ul class="grid-100">
-        <li>Email: yang.t.skywalker [at] gmail.com</li>
-        <li>Github: <a href="https://github.com/notoookay">https://github.com/notoookay</a> </li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/wenyang-tang">www.linkedin.com/in/wenyang-tang</a></li>
+      <ul class="contact-info">
+        <li><strong>Email:</strong> yang.t.skywalker [at] gmail.com</li>
+        <li><strong>Github:</strong> <a href="https://github.com/notoookay" target="_blank" rel="noopener noreferrer">notoookay</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wenyang-tang" target="_blank" rel="noopener noreferrer">wenyang-tang</a></li>
       </ul>
-    </div>
-    <div class="grid-60">
-      Hi 👋, I'm wenyang, a graduate student working on NLP, more specifically on Question Answering.
-      There are many things can be studied:
+    </section>
+
+    <section class="grid-60">
+      <h3>About Me</h3>
+      <p>Hi 👋, I'm Wenyang, a graduate student specializing in NLP, with a focus on Question Answering systems.</p>
+
+      <h4>Research Interests</h4>
       <ol>
         <li>
-          How to leverage LLM to understand human intention of asking question, and give accurate answers,
-          that's an ongoing research, there are evidences show that LLM can obtain knowledge even with rare resources,
-          but current evaluation can only leverage little of this.
+          <strong>LLM for Question Understanding:</strong> Exploring how to leverage Large Language Models to better understand human question intentions and provide accurate answers. This ongoing research investigates LLMs' ability to obtain knowledge from limited resources and improve current evaluation methods.
         </li>
         <li>
-          Current QA systems use LLM, which is computationally intensive. How to make a QA system small while
-          with less capability loss.
+          <strong>Efficient QA Systems:</strong> Investigating methods to create smaller, more efficient QA systems while minimizing capability loss, addressing the computational intensity of current LLM-based systems.
         </li>
         <li>
-          Language models always show certain biases like sexism, racism etc. It can be caused by many factors,
-          but most from the data which model was trained on, as people who wrote the text are with biases more or less.
+          <strong>Bias in Language Models:</strong> Examining and mitigating biases (e.g., sexism, racism) in language models, which often stem from the training data and reflect societal biases present in the text authors.
         </li>
       </ol>
 
-      The field is such a fast-paced, and I'm always looking for someone can work together.
-    </div>
+      <p>The field of NLP is rapidly evolving, and I'm always eager to collaborate with fellow researchers and enthusiasts. If you're interested in working together or discussing these topics, please don't hesitate to reach out!</p>
+    </section>
+  </main>
 
 
     <footer class="grid-95">
