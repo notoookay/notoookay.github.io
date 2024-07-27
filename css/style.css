@@ -256,6 +256,14 @@ textarea {
   width: 40%;
   display: block;
   margin: auto;
+  border-radius: 50%;
+  border: 8px solid #f0e68c; /* Light khaki color for an Impressionist feel */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portrait img:hover {
+  transform: scale(1.05);
 }
 
 a {

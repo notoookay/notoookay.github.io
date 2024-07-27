@@ -19,62 +19,67 @@
 <!--  <link rel="apple-touch-icon" href="icon.png">-->
 
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
-<body>
+<body class="light-mode">
+  <div id="theme-toggle" class="theme-toggle">
+    <input type="checkbox" id="theme-switch" />
+    <label for="theme-switch" class="toggle-label">
+      <span class="toggle-icon light-icon">🎨</span>
+      <span class="toggle-icon dark-icon">🌙</span>
+    </label>
+  </div>
 
-  <!-- Add your site or application content here -->
-  <div class="grid-container">
-    <h1 id="can-not-stop"></h1>
+  <div class="canvas-container">
+    <div class="grid-container">
+      <h1 id="can-not-stop" class="impressionist-heading"></h1>
 
-    <div class="grid-40">
-      <div class="portrait">
-        <img src="assets/img/wenyang.JPG" alt="portrait"> <br/>
-        <b>Wenyang Tang</b>
+      <div class="grid-40">
+        <div class="portrait impressionist-frame">
+          <img src="assets/img/wenyang.JPG" alt="Portrait of Wenyang Tang" class="impressionist-portrait">
+          <b class="artist-signature">Wenyang Tang</b>
+        </div>
+        <ul class="grid-100 contact-list">
+          <li><span class="contact-icon">✉️</span> yang.t.skywalker [at] gmail.com</li>
+          <li><span class="contact-icon">🐙</span> <a href="https://github.com/notoookay" class="brushstroke-link">GitHub</a></li>
+          <li><span class="contact-icon">🔗</span> <a href="https://www.linkedin.com/in/wenyang-tang" class="brushstroke-link">LinkedIn</a></li>
+        </ul>
       </div>
-      <ul class="grid-100">
-        <li>Email: yang.t.skywalker [at] gmail.com</li>
-        <li>Github: <a href="https://github.com/notoookay">https://github.com/notoookay</a> </li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/wenyang-tang">www.linkedin.com/in/wenyang-tang</a></li>
-      </ul>
+      <div class="grid-60 content-section">
+        <p class="intro">Hi 👋, I'm wenyang, a graduate student working on NLP, more specifically on Question Answering.</p>
+        <p>There are many things can be studied:</p>
+        <ol class="research-topics">
+          <li class="topic-item">
+            <span class="topic-highlight">LLM Understanding:</span> How to leverage LLM to understand human intention of asking questions, and give accurate answers. This ongoing research shows that LLMs can obtain knowledge even with rare resources, but current evaluation methods are limited.
+          </li>
+          <li class="topic-item">
+            <span class="topic-highlight">Efficient QA Systems:</span> Current QA systems use LLM, which is computationally intensive. The challenge is to create smaller QA systems while minimizing capability loss.
+          </li>
+          <li class="topic-item">
+            <span class="topic-highlight">Addressing Biases:</span> Language models often exhibit biases like sexism and racism, largely due to the data they're trained on. Understanding and mitigating these biases is crucial.
+          </li>
+        </ol>
+        <p class="outro">The field is fast-paced, and I'm always looking for collaborators to work with.</p>
+      </div>
+
+      <div class="divider brushstroke-divider"></div>
+
+      <footer class="grid-95">
+        <div class="grid-100">
+          <p>Last modified: <span id="last-modified" class="impressionist-date"></span></p>
+        </div>
+        <div class="grid-100">
+          <span class="copyright-text">&copy; 2024 Wenyang</span>
+        </div>
+      </footer>
     </div>
-    <div class="grid-60">
-      Hi 👋, I'm wenyang, a graduate student working on NLP, more specifically on Question Answering.
-      There are many things can be studied:
-      <ol>
-        <li>
-          How to leverage LLM to understand human intention of asking question, and give accurate answers,
-          that's an ongoing research, there are evidences show that LLM can obtain knowledge even with rare resources,
-          but current evaluation can only leverage little of this.
-        </li>
-        <li>
-          Current QA systems use LLM, which is computationally intensive. How to make a QA system small while
-          with less capability loss.
-        </li>
-        <li>
-          Language models always show certain biases like sexism, racism etc. It can be caused by many factors,
-          but most from the data which model was trained on, as people who wrote the text are with biases more or less.
-        </li>
-      </ol>
-
-      The field is such a fast-paced, and I'm always looking for someone can work together.
-    </div>
-
-
-    <footer class="grid-95">
-      <div class="grid-100">
-        <!-- add last modified date -->
-        <p>Last modified: <span id="last-modified"></span></p>
-      </div>
-      <div class="grid-100">
-        &copy; 2024 Wenyang
-      </div>
-    </footer>
-
   </div>
 
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <script src="js/app.js"></script>
+
+
 
 </body>
 
