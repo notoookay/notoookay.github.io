@@ -22,7 +22,7 @@ if (randomNumber === 0) {
   titleElement.type("GPU Poor!")
     .pause(500)
     .move(-2)
-    .type("ooooooo ", {delay: 400})
+    .type("ooooooo", {delay: 400})
     .move(2)
     .type("🥹")
     .go();
