@@ -50,3 +50,15 @@ fetch(url)
     const options = { year: 'numeric', month: 'long', day: 'numeric'};
     document.getElementById("last-modified").textContent = lastCommitDate.toLocaleDateString("en-US", options);
   });
+
+// Theme switcher
+document.querySelector('.switch input').addEventListener('change', function() {
+  if (this.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+});
+
+// Set initial theme
+document.documentElement.setAttribute('data-theme', 'dark');

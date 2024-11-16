@@ -7,6 +7,7 @@
   <title>wenyang's page</title>
   <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <meta name="description" content="personal website">
 
 <!--  <meta property="og:title" content="">-->
@@ -25,6 +26,14 @@
 
   <!-- Add your site or application content here -->
   <div class="grid-container">
+    <div class="theme-switch">
+      <i class="fas fa-sun"></i>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+      <i class="fas fa-moon"></i>
+    </div>
     <h1 id="can-not-stop"></h1>
 
     <div class="grid-40">
@@ -32,12 +41,15 @@
         <img src="assets/img/wenyang.JPG" alt="portrait"> <br/>
         <b>Wenyang Tang</b>
       </div>
-      <ul class="grid-100">
-        <li>Email: yang.t.skywalker [at] gmail.com</li>
-        <li>Github: <a href="https://github.com/notoookay">https://github.com/notoookay</a> </li>
+      <ul class="contact-info grid-100">
+        <li><i class="fa-regular fa-envelope"></i> yang.t.skywalker [at] gmail.com</li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/notoookay">notoookay</a></li>
+        <li><i class="fa-brands fa-x-twitter"></i> <a href="https://twitter.com/wenyang_t">@wenyang_t</a></li>
       </ul>
     </div>
     <div class="grid-60">
+      <p><b style="font-size: x-large;">I am actively looking for research internship opportunities.</b></p>
+
       <p>Hi 👋, I'm a graduate student specializing in Natural Language Processing (NLP), with a particular focus on
         Retrieval-Augmented Language Models and information retrieval. My research aims to push the boundaries of how
         machines understand and process human language, making them more efficient and effective in tasks such as
@@ -47,13 +59,14 @@
 
       <ol>
         <li>
-          <b>Retrieval-Augmented Language Models:</b> I'm exploring ways to enhance the performance of large language
-          models by efficiently retrieving and incorporating relevant information from external knowledge sources.
+          <b>Hallucination Detection and LLM Factuality:</b> My work focuses on developing methods to detect and prevent language
+          models from generating false or unsupported information, while improving their ability to produce factual and verifiable
+          outputs. This includes designing novel evaluation frameworks and techniques to enhance the truthfulness and reliability
+          of large language models.
         </li>
         <li>
-          <b>Information Retrieval:</b> My work involves developing algorithms and techniques to improve the accuracy
-          and
-          speed of retrieving relevant information from large datasets.
+          <b>Retrieval-Augmented Language Models:</b> I'm exploring ways to enhance the performance of large language
+          models by efficiently retrieving and incorporating relevant information from external knowledge sources.
         </li>
         <li>
           <b>Reinforcement Learning:</b> Drawing parallels to human learning processes, I'm also interested in applying
