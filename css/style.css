@@ -353,5 +353,22 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.highlight-box {
+  border-left: 4px solid #007bff;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.highlight-box h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.highlight-box ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
 
 
