@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Blog</title>
+    <link>https://notoookay.github.io/blog/</link>
+    <description>Recent content on My Blog</description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 May 2025 10:17:17 +0800</lastBuildDate>
+    <atom:link href="https://notoookay.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://notoookay.github.io/blog/about/</link>
+      <pubDate>Tue, 20 May 2025 10:17:17 +0800</pubDate>
+      <guid>https://notoookay.github.io/blog/about/</guid>
+      <description>A little about me and this blog</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>https://notoookay.github.io/blog/posts/hello-world/</link>
+      <pubDate>Tue, 20 May 2025 10:09:29 +0800</pubDate>
+      <guid>https://notoookay.github.io/blog/posts/hello-world/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog&lt;/h1&gt;
+&lt;p&gt;This is my first post on the new blog. I&amp;rsquo;m excited to share my thoughts and ideas here.&lt;/p&gt;
+&lt;h2 id=&#34;what-to-expect&#34;&gt;What to Expect&lt;/h2&gt;
+&lt;p&gt;In this blog, I&amp;rsquo;ll be writing about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technology&lt;/li&gt;
+&lt;li&gt;Web Development&lt;/li&gt;
+&lt;li&gt;Personal Projects&lt;/li&gt;
+&lt;li&gt;And more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay tuned for more content coming soon!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
