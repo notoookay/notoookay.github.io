@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My Blog</title>
+    <title>Wenyang&#39;s Blog</title>
     <link>https://notoookay.github.io/blog/</link>
-    <description>Recent content on My Blog</description>
-    <generator>Hugo -- 0.147.3</generator>
+    <description>Recent content on Wenyang&#39;s Blog</description>
+    <generator>Hugo -- 0.156.0</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 May 2025 10:17:17 +0800</lastBuildDate>
     <atom:link href="https://notoookay.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://notoookay.github.io/blog/about/</link>
       <pubDate>Tue, 20 May 2025 10:17:17 +0800</pubDate>
       <guid>https://notoookay.github.io/blog/about/</guid>
-      <description>A little about me and this blog</description>
+      <description>About Wenyang Tang and this blog</description>
     </item>
     <item>
       <title>Hello World</title>

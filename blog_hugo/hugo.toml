@@ -1,0 +1,51 @@
+baseURL = 'https://notoookay.github.io/blog/'
+languageCode = 'en-us'
+title = "Wenyang's Blog"
+theme = 'PaperMod'
+
+[params]
+  description = "Notes on applied AI, ML engineering, and building practical systems"
+  author = "Wenyang Tang"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[params.homeInfoParams]
+  Title = "Wenyang's Blog"
+  Content = "Notes on applied AI, ML engineering, and building practical systems"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/notoookay"
+
+[[params.socialIcons]]
+  name = "x"
+  url = "https://twitter.com/wenyang_t"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:yang.t.skywalker@gmail.com"
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
