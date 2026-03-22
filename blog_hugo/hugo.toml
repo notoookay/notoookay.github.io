@@ -2,6 +2,7 @@ baseURL = 'https://notoookay.github.io/blog/'
 languageCode = 'en-us'
 title = "Wenyang's Blog"
 theme = 'PaperMod'
+publishDir = '../blog'
 
 [params]
   description = "Notes on applied AI, ML engineering, and building practical systems"
