@@ -353,6 +353,21 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.job-notice {
+  border: 1px solid #f0ad4e;
+  border-left: 4px solid #f0ad4e;
+  background-color: rgba(240, 173, 78, 0.1);
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.job-notice i {
+  margin-right: 8px;
+  color: #f0ad4e;
+}
+
 .highlight-box {
   border-left: 4px solid #007bff;
   padding: 10px 20px;
