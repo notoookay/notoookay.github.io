@@ -71,3 +71,25 @@ if (themeToggle) {
 
 // Set initial theme
 document.documentElement.setAttribute('data-theme', 'dark');
+
+// BibTeX toggles in the publications list
+document.querySelectorAll('.paper-entry .bibtex-toggle').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const details = link.closest('.paper-entry').querySelector('details.bibtex');
+    if (details) details.open = !details.open;
+  });
+});
+
+// Click anywhere inside a BibTeX block to select all of its content.
+// If the user is making a manual selection (drag), don't override it.
+document.querySelectorAll('.paper-entry details.bibtex pre').forEach(pre => {
+  pre.addEventListener('click', () => {
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) return;
+    const range = document.createRange();
+    range.selectNodeContents(pre);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  });
+});
