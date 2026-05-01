@@ -393,11 +393,22 @@ input:checked + .slider:before {
 
 /* BibTeX block for publications */
 .paper-entry details.bibtex {
-  margin: 6px 0 12px;
+  margin: -8px 0 12px;
 }
 
 .paper-entry details.bibtex > summary {
+  display: inline;
   cursor: pointer;
+  list-style: none;
+  text-decoration: underline;
+}
+
+.paper-entry details.bibtex > summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-entry details.bibtex > summary::marker {
+  content: '';
 }
 
 .paper-entry details.bibtex pre {
