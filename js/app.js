@@ -73,11 +73,16 @@ if (themeToggle) {
 document.documentElement.setAttribute('data-theme', 'dark');
 
 // Click anywhere inside a BibTeX block to select all of its content.
-// If the user is making a manual selection (drag), don't override it.
+// Only preserve an existing selection if it's a drag inside this same <pre>;
+// selections elsewhere on the page should not block the auto-select.
 document.querySelectorAll('.paper-entry details.bibtex pre').forEach(pre => {
   pre.addEventListener('click', () => {
     const selection = window.getSelection();
-    if (selection && selection.toString().length > 0) return;
+    if (!selection) return;
+    if (selection.toString().length > 0 && selection.rangeCount > 0) {
+      const anchor = selection.getRangeAt(0).commonAncestorContainer;
+      if (pre.contains(anchor)) return;
+    }
     const range = document.createRange();
     range.selectNodeContents(pre);
     selection.removeAllRanges();
